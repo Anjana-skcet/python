@@ -1,0 +1,519 @@
+sampledata.csv
+
+Value1,Score,Value3,TextColumn,DataValue1,DataValue2,DataValue3
+79,40,13,example text,68.32175005688657,12,8.255227812551437
+77,20,27,another example,60.23785540953928,14,10.627254830381862
+7,40,7,another example,40.29533583212938,18,7.299838619781416
+16,20,22,some old_word text,52.49348838996664,11,7.499206599456338
+35,30,22,some old_word text,65.71516329558158,19,10.410206672131322
+85,10,27,some old_word text,66.91967791035671,2,10.7153860369732
+41,30,20,some old_word text,53.22929635241293,7,0.6885399752242716
+11,30,8,some old_word text,27.15622411613056,18,9.26584912568552
+9,30,45,some old_word text,45.45101130542055,10,4.070410231549033
+79,10,32,text without example,46.12652563097141,16,26.34688621610032
+11,10,45,text without example,54.11613578524084,1,20.87673948144875
+45,40,23,example text,55.26549537523956,15,6.757644021231338
+52,20,36,another example,41.32395010726333,13,3.6044154835834474
+72,30,9,example text,45.10204987373828,17,1.7018057770922752
+96,10,26,some old_word text,28.059116396864255,10,12.198825243142501
+28,40,2,text without example,64.28506381974054,9,-0.6171251535378346
+87,40,27,text without example,68.29302852807345,19,6.355285585013267
+74,30,28,some old_word text,56.208280914747384,19,13.42385793075445
+92,10,21,text without example,48.400024626648396,15,6.06457330237024
+46,30,47,example text,52.41673254943575,8,7.144244798328575
+
+inven.csv
+
+Product_ID,Product_Name,Quantity,Price,Category,Supplier
+P1000,Product_1,10,10.5,Electronics,Supplier_1
+P1001,Product_2,11,13.7,Home,Supplier_2
+P1002,Product_3,12,16.9,Garden,Supplier_3
+P1003,Product_4,13,20.1,Electronics,Supplier_4
+P1004,Product_5,14,23.3,Home,Supplier_1
+P1005,Product_6,10,26.5,Garden,Supplier_2
+P1006,Product_7,11,29.7,Electronics,Supplier_3
+P1007,Product_8,12,10.5,Home,Supplier_4
+P1008,Product_9,13,13.7,Garden,Supplier_1
+P1009,Product_10,14,16.9,Electronics,Supplier_2
+P1010,Product_11,10,20.1,Home,Supplier_3
+P1011,Product_12,11,23.3,Garden,Supplier_4
+P1012,Product_13,12,26.5,Electronics,Supplier_1
+P1013,Product_14,13,29.7,Home,Supplier_2
+P1014,Product_15,14,10.5,Garden,Supplier_3
+P1015,Product_16,10,13.7,Electronics,Supplier_4
+P1016,Product_17,11,16.9,Home,Supplier_1
+P1017,Product_18,12,20.1,Garden,Supplier_2
+P1018,Product_19,13,23.3,Electronics,Supplier_3
+P1019,Product_20,14,26.5,Home,Supplier_4
+P1020,Product_21,10,29.7,Garden,Supplier_1
+P1021,Product_22,11,10.5,Electronics,Supplier_2
+P1022,Product_23,12,13.7,Home,Supplier_3
+P1023,Product_24,13,16.9,Garden,Supplier_4
+P1024,Product_25,14,20.1,Electronics,Supplier_1
+P1025,Product_26,10,23.3,Home,Supplier_2
+P1026,Product_27,11,26.5,Garden,Supplier_3
+P1027,Product_28,12,29.7,Electronics,Supplier_4
+P1028,Product_29,13,10.5,Home,Supplier_1
+P1029,Product_30,14,13.7,Garden,Supplier_2
+P1030,Product_31,10,16.9,Electronics,Supplier_3
+P1031,Product_32,11,20.1,Home,Supplier_4
+P1032,Product_33,12,23.3,Garden,Supplier_1
+P1033,Product_34,13,26.5,Electronics,Supplier_2
+P1034,Product_35,14,29.7,Home,Supplier_3
+P1035,Product_36,10,10.5,Garden,Supplier_4
+P1036,Product_37,11,13.7,Electronics,Supplier_1
+P1037,Product_38,12,16.9,Home,Supplier_2
+P1038,Product_39,13,20.1,Garden,Supplier_3
+P1039,Product_40,14,23.3,Electronics,Supplier_4
+P1040,Product_41,10,26.5,Home,Supplier_1
+P1041,Product_42,11,29.7,Garden,Supplier_2
+P1042,Product_43,12,10.5,Electronics,Supplier_3
+P1043,Product_44,13,13.7,Home,Supplier_4
+P1044,Product_45,14,16.9,Garden,Supplier_1
+P1045,Product_46,10,20.1,Electronics,Supplier_2
+P1046,Product_47,11,23.3,Home,Supplier_3
+P1047,Product_48,12,26.5,Garden,Supplier_4
+P1048,Product_49,13,29.7,Electronics,Supplier_1
+P1049,Product_50,14,10.5,Home,Supplier_2
+# 1. String Operations
+string1 = "Hello"
+string2 = "World"
+indexed_char = string1[1]                                    
+sliced_string = string1[1:4]                                  
+concatenated_string = string1 + " " + string2      
+repeated_string = string1 * 3                                
+print("String Operations:")
+print(f"Original Strings: '{string1}', '{string2}'")
+print(f"Indexed Character: {indexed_char}")
+print(f"Sliced String: {sliced_string}")
+# Indexing
+# Slicing
+# Concatenation
+# Repetition
+print(f"Concatenated String: {concatenated_string}")
+print(f"Repeated String: {repeated_string}")
+print()
+# 2. List Operations
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+indexed_list_element = list1[1]                          
+# Indexing
+sliced_list = list1[1:]                                      
+# Slicing
+concatenated_list = list1 + list2                      
+repeated_list = list1 * 2                                  
+print("List Operations:")
+print(f"Original Lists: {list1}, {list2}")
+# Concatenation
+# Repetition
+print(f"Indexed List Element: {indexed_list_element}")
+print(f"Sliced List: {sliced_list}")
+print(f"Concatenated List: {concatenated_list}")
+print(f"Repeated List: {repeated_list}")
+print()
+# 3. Tuple Operations
+tuple1 = (10, 20, 30)
+tuple2 = (40, 50, 60)
+indexed_tuple_element = tuple1[1]                  
+sliced_tuple = tuple1[:2]                                  
+concatenated_tuple = tuple1 + tuple2              
+repeated_tuple = tuple1 * 2                              
+# Indexing
+# Slicing
+# Concatenation
+# Repetition
+print("Tuple Operations:")
+print(f"Original Tuples: {tuple1}, {tuple2}")
+print(f"Indexed Tuple Element: {indexed_tuple_element}")
+print(f"Sliced Tuple: {sliced_tuple}")
+print(f"Concatenated Tuple: {concatenated_tuple}")
+print(f"Repeated Tuple: {repeated_tuple}")
+print()
+# 4. Dictionary Operations
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'c': 3, 'd': 4}
+indexed_dict_element = dict1['a']                
+concatenated_dict = {**dict1, **dict2}    
+# Indexing (Access by Key)
+# Concatenation (Merge Dictionaries)
+print("Dictionary Operations:")
+print(f"Original Dictionaries: {dict1}, {dict2}")
+print(f"Indexed Dictionary Element: {indexed_dict_element}")
+print(f"Concatenated Dictionary: {concatenated_dict}")
+print()
+# 5. Set Operations
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+concatenated_set = set1.union(set2)      
+# Concatenation (Union of Sets)
+# Repetition (Not supported in sets, no duplicates allowed)
+print("Set Operations:")
+print(f"Original Sets: {set1}, {set2}")
+print(f"Union of Sets: {concatenated_set}")
+
+EX.No:2
+# Define a list of dictionaries containing students and their scores
+students = [
+{"name": "Alice", "score": 85},
+{"name": "Bob", "score": 92},
+{"name": "Charlie", "score": 85},
+{"name": "David", "score": 78},
+{"name": "Eva", "score": 92},
+{"name": "Frank", "score": 70},
+]
+# Extract the highest score using max() and list comprehension
+highest_score = max([student["score"] for student in students])
+print(f"Highest score: {highest_score}")
+# Create a set of unique scores using set()
+unique_scores = set([student["score"] for student in students])
+print(f"Unique scores: {unique_scores}")
+# Count occurrences of each score using a dictionary
+score_count = {}
+for student in students:
+    score = student["score"]
+    if score in score_count:
+        score_count[score] += 1
+    else:
+        score_count[score] = 1
+print(f"Score count: {score_count}")
+# Sort the students by score to find the top 3 students
+top_3_students = sorted(students, key=lambda x: x["score"], reverse=True)[:3]
+# Create a list of tuples with name and score
+top_3_students_tuples = [(student["name"], student["score"]) for student in
+top_3_students]
+print(f"Top 3 students: {top_3_students_tuples}")
+# Convert the original students list to a tuple for immutability
+students_tuple = tuple((student["name"], student["score"]) for student in
+students)
+print(f"Immutable student data (tuple): {students_tuple}")
+Ex.no:3
+# Importing the required modules
+import math
+import random
+# Function to demonstrate math operations
+def math_operations():
+# Generate random numbers
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+# Perform mathematical operations using math module
+    sqrt_num1 = math.sqrt(num1)
+    power = math.pow(num1, 2)
+    sine_val = math.sin(num1)
+# Generate a random float between 0 and 1
+    rand_float = random.random()
+# Generate a random number from a uniform distribution between two values
+    rand_uniform = random.uniform(10, 20)
+# Display the results
+    print(f"Random number 1: {num1}")
+    print(f"Random number 2: {num2}")
+    print(f"Square root of {num1}: {sqrt_num1:.2f}")
+    print(f"{num1} raised to the power 2: {power}")
+    print(f"Sine of {num1}: {sine_val:.2f}")
+    print(f"Random float between 0 and 1: {rand_float}")
+    print(f"Random float between 10 and 20: {rand_uniform}")
+# Main function to call the math operations
+if __name__ == "__main__":
+    math_operations()
+
+Ex.no:4
+# Function with Required Arguments
+def compute_area_rectangle(length, breadth):  
+    area = length * breadth  
+    return area  
+# Function with Default Arguments
+def raise_to_power(num, exp=2):  
+    result = num ** exp  
+    return result  
+# Function with Variable-Length Arguments (*args)
+def sum_values(*nums):  
+    total = sum(nums)  
+    return total  
+# Function with Keyword Arguments (**kwargs)
+def display_info(**details):  
+    for key, value in details.items():  
+        print(f"{key}: {value}")  
+# Main Function to demonstrate all the functions
+def execute_demo():  
+# Using function with required arguments
+    print("Rectangle Area (length=6, breadth=4):", compute_area_rectangle(6, 4))
+# Using function with default arguments
+    print("Power (num=5, default exp=2):", raise_to_power(5))  
+    print("Power (num=2, exp=2):", raise_to_power(2, 2))  
+# Using function with variable-length arguments (*args)
+    print("Sum of numbers (11,22,33,44,55):", sum_values(11, 22, 33, 44, 55))  
+# Using function with keyword arguments (**kwargs)
+    print("Person Information:")  
+    display_info(name="John", age=20)  
+# Call the main function to execute the program
+if __name__ == "__main__":  
+    execute_demo()
+Ex.no:5
+#5
+import numpy as np
+# Step 2: Create array from Python list
+num_list_array = np.array([10, 20, 30, 40])
+print("Array from List:", num_list_array)
+# Step 3: Create array from Python tuple
+num_tuple_array = np.array((15, 25, 35, 45))
+print("Array from Tuple:", num_tuple_array)
+# Step 4: Create 2D array from list of lists
+matrix_from_lists = np.array([[11, 21], [31, 41]])
+print("2D Array from List of Lists:\n", matrix_from_lists)
+# Step 5: Create array using NumPy intrinsic object (arange)
+sequence_array = np.arange(12)
+print("Array using np.arange:", sequence_array)
+# Step 6: Generate random array (normal distribution)
+normal_dist_array = np.random.rand(4, 4)  # 4x4 array
+print("Random Array:\n", normal_dist_array)
+# Step 7: Generate random integers
+rand_int_matrix = np.random.randint(5, 15, size=(3, 3))
+print("Random Integer Array:\n", rand_int_matrix)
+# Step 8: Create identity matrix
+id_matrix = np.eye(4)
+print("Identity Matrix:\n", id_matrix)
+# Step 9: Create array with custom values
+filled_value_array = np.full((3, 3), 8)
+print("Array with Custom Value:\n", filled_value_array)
+# Step 10: Manipulate array (Reshape)
+reshaped_matrix = num_list_array.reshape(2, 2)
+print("Reshaped Array:\n", reshaped_matrix)
+Ex.no:6
+import numpy as np
+
+num_array = np.array([10, 20, 30, 40, 50, 90])
+indexed_element = num_array[1]
+sliced_array = num_array[0:3]
+reshaped_array = num_array.reshape(3,2)
+second_array = np.array([60, 70, 80])
+vertical_array = np.vstack((num_array, np.pad(second_array, (0, 3), 'constant')))
+horizontal_array = np.hstack((num_array[0:3], second_array))
+split_array = np.array_split(num_array, 3)
+increment_array = num_array + 5
+multiplied_array = num_array * 2
+print("Original Array:", num_array)
+print("Access by index:", indexed_element)
+print("Sliced the array:", sliced_array)
+print("Reshape the array:\n", reshaped_array)
+print("Vertical array:\n", vertical_array)
+print("Horizontal array:", horizontal_array)
+print("Spliting the array:", split_array)
+print("Addition:", increment_array)
+print("Multiplication", multiplied_array)
+Ex.no:7
+#7
+from PIL import Image
+import numpy as np
+
+image = Image.open("sample.jpeg")
+image_array = np.array(image)
+print("Image Shape:", image_array.shape)
+cropped_array = image_array[50:300, 50:300]
+cropped_image = Image.fromarray(cropped_array)
+flipped_vertically = np.flipud(image_array)
+flipped_horizontally = np.fliplr(image_array)
+flipped_vertically_image = Image.fromarray(flipped_vertically)
+flipped_horizontally_image = Image.fromarray(flipped_horizontally)
+cropped_image.save("cropped_image.jpg")
+flipped_vertically_image.save("flipped_vertically_image.jpg")
+flipped_horizontally_image.save("flipped_horizontally_image.jpg")
+Ex.no:8
+import pandas as pd
+import numpy as np
+# Step 1: Create a Pandas Series from a list
+values_list = [15, 25, 35, 45]
+series_from_values = pd.Series(values_list)
+print("Series from Values List:\n", series_from_values)
+# Step 2: Create a Pandas Series from a dictionary
+scores_dict = {'Math': 95, 'Science': 85, 'English': 90}
+series_from_scores = pd.Series(scores_dict)
+print("\nSeries from Scores Dictionary:\n", series_from_scores)
+# Step 3: Create a Pandas Series from a NumPy array
+grades_array = np.array([88, 76, 92, 85, 90])
+series_from_grades = pd.Series(grades_array)
+print("\nSeries from Grades Array:\n", series_from_grades)
+# Step 4: Create a Pandas DataFrame from a dictionary
+employee_data = {
+'Employee': ['Alice', 'Bob', 'Charlie', 'Diana'],
+'Years': [5, 3, 7, 2],
+'Income': [60000, 55000, 72000, 48000]
+}
+df_from_employee_dict = pd.DataFrame(employee_data)
+print("\nDataFrame from Employee Dictionary:\n", df_from_employee_dict)
+# Step 5: Create a DataFrame from a list of lists
+student_records = [
+['Eve', 21, 50000],
+['Frank', 26, 68000],
+['Grace', 20, 45000]
+]
+df_from_student_list = pd.DataFrame(student_records, columns=['Student',
+'Age', 'Salary'])
+print("\nDataFrame from Student Records:\n", df_from_student_list)
+# Step 6: Create a DataFrame from a NumPy array
+matrix_data = np.array([[10, 20, 30], [40, 50, 60], [70, 80, 90]])
+df_from_matrix = pd.DataFrame(matrix_data, columns=['X', 'Y', 'Z'])
+print("\nDataFrame from Matrix Array:\n", df_from_matrix)
+# Step 7: Access DataFrame Columns
+print("\nAccess 'Employee' Column:\n", df_from_employee_dict['Employee'])
+# Step 8: Access DataFrame Rows
+print("\nAccess First Row using iloc[]:\n", df_from_employee_dict.iloc[0])
+print("\nAccess Row where 'Employee' is 'Bob' using loc[]:\n", df_from_employee_dict.loc[df_from_employee_dict['Employee'] == 'Bob'])
+# Step 9: Save the DataFrame to a CSV file
+df_from_employee_dict.to_csv("employees_output.csv", index=False)
+print("\nDataFrame saved to 'employees_output.csv'")
+Ex.no:9
+import pandas as pd  
+
+# Load the CSV file into a DataFrame
+data_frame = pd.read_csv("C:\\Users\\Anjana\\Downloads\\product_inventory_50.csv")
+
+# Remove the "P" prefix and convert Product_ID to integer type
+data_frame['Product_ID'] = data_frame['Product_ID'].str.replace('P', '').astype(int)
+
+# Display the first few records
+print("Preview of First 5 Entries:\n", data_frame.head())  
+# Display the last few records
+print("Preview of Last 5 Entries:\n", data_frame.tail())
+
+# Get the shape of the DataFrame
+print("Dimensions of Inventory DataFrame:", data_frame.shape)
+# Get index details
+print("Index Information:", data_frame.index)
+# Get column names
+print("Available Columns:", data_frame.columns)
+
+# Select rows where 'Product_ID' is greater than 50
+high_id_rows = data_frame[data_frame['Product_ID'] > 50]
+print("Rows where Product_ID > 50:\n", high_id_rows)
+
+# Delete columns 'Product_ID' and 'Product_Name'
+data_frame_dropped_cols = data_frame.drop(columns=['Product_ID', 'Product_Name'])
+print("DataFrame after dropping columns:\n", data_frame_dropped_cols)
+
+# Delete rows where 'Product_ID' is less than 10
+data_frame_dropped_rows = data_frame[data_frame['Product_ID'] >= 10]
+print("DataFrame after dropping rows where Product_ID < 10:\n", data_frame_dropped_rows)
+
+# Step 1: Ensure 'Column1' exists in the DataFrame, or replace with a valid column name
+# For this example, assuming 'Quantity' as 'Column1' and 'Price' as 'Column2'
+if 'Quantity' in data_frame.columns:
+    # Rank based on 'Quantity'
+    data_frame['Rank'] = data_frame['Quantity'].rank()
+    print("Ranked DataFrame:\n", data_frame)
+else:
+    print("Column 'Quantity' does not exist in the data.")
+
+# Step 2: Sort by 'Quantity'
+sorted_data_frame = data_frame.sort_values(by='Quantity')
+print("Sorted DataFrame by Quantity:\n", sorted_data_frame)
+
+# Step 3: Sort by 'Quantity' ascending, 'Price' descending
+sorted_data_frame_multi = data_frame.sort_values(by=['Quantity', 'Price'], ascending=[True, False])
+print("Sorted by Quantity and Price:\n", sorted_data_frame_multi)
+
+# Step 1: Sum of 'Column1'
+print("Sum of Column1:", data_frame['Quantity'].sum())
+# Step 2: Mean of 'Column2'
+print("Mean of Column2:", data_frame['Price'].mean())
+# Step 3: Standard deviation of 'Rank' (assuming 'Discount' as Column3)
+if 'Rank' in data_frame.columns:
+    print("Standard Deviation of Rank:", data_frame['Rank'].std())
+
+# Step 1: Value counts in 'Quantity'
+if 'Quantity' in data_frame.columns:
+    print("Value counts in Quantity:\n", data_frame['Quantity'].value_counts())
+
+# Step 2: Unique values in 'Price'
+if 'Price' in data_frame.columns:
+    print("Unique values in Price:", data_frame['Price'].unique())
+
+# Step 3: Number of unique values in 'Discount'
+if 'Rank' in data_frame.columns:
+    print("Number of unique values in Rank:", data_frame['Rank'].nunique())
+
+# Step 1: Rename a single column (example renaming 'Quantity' to 'Stock')
+data_frame_renamed = data_frame.rename(columns={'Quantity': 'Stock'})
+print("DataFrame after renaming Quantity to Stock:\n", data_frame_renamed)
+
+# Step 2: Rename multiple columns (example renaming 'Quantity' and 'Price')
+data_frame_renamed_multi = data_frame.rename(columns={'Quantity': 'Stock', 'Price': 'Cost'})
+print("DataFrame after renaming Quantity and Price:\n", data_frame_renamed_multi)
+
+# Step 3: Rename 'Discount' to 'Value' in-place
+if 'Rank' in data_frame.columns:
+    data_frame.rename(columns={'Rank': 'Value'}, inplace=True)
+    print("DataFrame after renaming Rank to Value (in-place):\n", data_frame)
+else:
+    print("Column 'Rank' does not exist in the data.")
+Ex.no:10
+
+import pandas as pd
+# Step 2: Read CSV file into DataFrame
+data_frame = pd.read_csv("C:\\Users\\Anjana\\Downloads\\sample_data.csv")
+# Step 3: Preview first few rows of the data
+print(data_frame.head())
+
+# Step 1: Detect missing values
+print("Missing Values:\n", data_frame.isnull().sum())
+# Step 2: Drop rows with missing values
+data_frame_cleaned = data_frame.dropna()
+print("DataFrame after dropping missing values:\n", data_frame_cleaned)
+# Step 3: Fill missing values with the column mean for numeric columns only
+data_frame_filled = data_frame.fillna(data_frame.mean(numeric_only=True))
+print("DataFrame after filling missing values:\n", data_frame_filled)
+
+# Step 1: Use apply() to square every element in 'Value1'
+data_frame['Value1_squared'] = data_frame['Value1'].apply(lambda x: x**2)
+print("DataFrame after applying lambda function:\n", data_frame)
+# Step 2: Use map() to map values in 'Score' (e.g., changing specific values)
+data_frame['Score_mapped'] = data_frame['Score'].map({10: 'A', 20: 'B'})
+print("DataFrame after mapping values in Score:\n", data_frame)
+# Step 3: Apply a custom function to double every value in 'Value3'
+data_frame['Value3_doubled'] = data_frame['Value3'].apply(lambda x: x * 2)
+print("DataFrame after applying custom function:\n", data_frame)
+
+# Step 1: Calculate IQR for 'Value1'
+Q1 = data_frame['Value1'].quantile(0.25)
+Q3 = data_frame['Value1'].quantile(0.75)
+IQR = Q3 - Q1
+# Step 2: Define outlier conditions
+outliers = data_frame[((data_frame['Value1'] < (Q1 - 1.5 * IQR)) |
+(data_frame['Value1'] > (Q3 + 1.5 * IQR)))]
+# Step 3: Filter out the outliers
+data_frame_filtered = data_frame[~((data_frame['Value1'] < (Q1 - 1.5 * IQR)) |
+(data_frame['Value1'] > (Q3 + 1.5 * IQR)))]
+print("Filtered DataFrame without outliers:\n", data_frame_filtered)
+
+# Step 1: Convert a string column to lowercase
+data_frame['TextColumn'] = data_frame['TextColumn'].str.lower()
+print("Lowercase strings:\n", data_frame['TextColumn'])
+# Step 2: Check if a string contains 'example'
+data_frame['ContainsExample'] = data_frame['TextColumn'].str.contains('example')
+print("Does the string contain 'example'?\n", data_frame['ContainsExample'])
+# Step 3: Replace substrings
+data_frame['TextColumn_replaced'] = data_frame['TextColumn'].str.replace('old_word', 'new_word')
+print("DataFrame after replacing substrings:\n",
+data_frame['TextColumn_replaced'])
+
+import matplotlib.pyplot as plt  
+# Step 1: Line Plot for 'DataValue1'  
+#data_frame['DataValue1'].plot()  
+#plt.title('Line Plot of DataValue1')  
+#plt.xlabel('Index')  # Adding an X-axis label
+#plt.ylabel('Value')  # Adding a Y-axis label
+#plt.show()  
+# Step 2: Bar Plot for 'DataValue2'  
+data_frame['DataValue2'].plot(kind='bar')  
+plt.title('Bar Plot of DataValue2')  
+plt.xlabel('Index')  # Adding an X-axis label
+plt.ylabel('Value')  # Adding a Y-axis label
+plt.show()  
+# Step 3: Histogram for 'DataValue3' and Density Plot  
+data_frame['DataValue3'].plot(kind='hist', bins=10)  
+plt.title('Histogram of DataValue3')  
+plt.xlabel('DataValue3')  # Adding an X-axis label
+plt.ylabel('Frequency')  # Adding a Y-axis label
+plt.show()  
+data_frame['DataValue3'].plot(kind='density')  
+plt.title('Density Plot of DataValue3')  
+plt.xlabel('DataValue3')  # Adding an X-axis label
+plt.show()
